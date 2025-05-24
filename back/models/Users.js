@@ -20,7 +20,7 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Password is required'],
     minlength: [8, 'Password must be at least 8 characters long']
-  },
+  },  
   accessCode: {
     type: String,
     required: [true, 'Access code is required'],
@@ -32,6 +32,12 @@ const UserSchema = new mongoose.Schema({
     enum: ['admin', 'user'],
     default: 'user',
     required: [true, 'User type is required']
+  },
+  resetToken: {
+    type: String
+  },
+  resetTokenExpiry: {
+    type: Date
   }
 });
 

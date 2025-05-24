@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Users = require('../models/Users');
-const bcrypt = require('bcrypt');
 
 const nameRegex = /^[A-Za-zÀ-ÿ\s]+$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

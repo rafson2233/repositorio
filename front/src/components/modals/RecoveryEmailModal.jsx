@@ -4,7 +4,7 @@ const Modal = ({ onClose }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <h3>Email enviado com sucesso</h3>
+        <h3>Email sent successfully!</h3>
         <div className="modal-button-container">
           <button onClick={onClose}>OK</button>
         </div>
