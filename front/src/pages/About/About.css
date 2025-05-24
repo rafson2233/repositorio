@@ -1,0 +1,100 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.contentAbout {
+    background-color: var(--color-2);
+    flex-direction: column;
+    text-align: justify;
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+    width: 700px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);    
+}
+
+.contentAbout h2 {
+    color:var(--color-4);
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+}
+
+.contentAbout p, .contentAbout ul {
+    color: var(--color-4);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contentAbout ul {
+    padding-left: 20px;
+}
+
+.buttonAbout {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttonAbout button {
+    height: 55px;
+    width: 220px;
+    font-size: 18px;
+    color: var(--color-2);
+    background-color: var(--color-3);
+    border: none;
+    border-radius: 10px;
+}
+
+.buttonAbout button:hover {
+    background-color: var(--color-5);
+}
+
+.roadmap {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--color-3);
+}
+
+.roadmap h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color:var(--color-4);
+    font-weight: 700;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.step {
+    padding: 30px;
+    border-radius: 12px;
+    width: 220px;
+    border: 2px solid var(--color-4);
+    background-color: var(--color-2);
+    color: var(--color-4);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.step p {
+    font-size: 15px;
+}
+
+.step:hover {
+    background-color: var(--color-6);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+    .icon-About {
+    color:var(--color-4);
+    font-size: 30px;
+}

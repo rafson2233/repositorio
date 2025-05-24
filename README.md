@@ -23,4 +23,4 @@ cd back
 npm install
 npm run dev
 ```
-O servidor será iniciado na porta http://localhost:5000/.# repositorio
+O servidor será iniciado na porta http://localhost:5000/.
