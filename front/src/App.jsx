@@ -7,6 +7,8 @@ import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
 import TicketRegistration from './pages/TicketRegistration/TicketRegistration';
 import ProtectedRoute from "./routes/ProtectedRoute";
+import RecoveryEmail from "./pages/ChangePassword/RecoveryEmail";
+import ResetPassword from "./pages/ChangePassword/ResetPassword";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/recovery" element={<RecoveryEmail />} />
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
 
         <Route
           path="/ticketRegistration"
