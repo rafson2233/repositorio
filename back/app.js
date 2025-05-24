@@ -9,6 +9,7 @@ const tokenValidation = require('./routes/TokenValidation')
 const logoutRoutes = require('./routes/LogoutRoutes')
 const recoveryRouts = require('./routes/RecoveryRoutes')
 const displayTicketsRoutes = require('./routes/DisplayAllTicketsRoutes')
+const ticketsRoutes = require('./routes/TicketsRoutes')
 
 const app = express();
 
@@ -28,5 +29,6 @@ app.use(tokenValidation);
 app.use(logoutRoutes); 
 app.use(recoveryRouts);
 app.use(displayTicketsRoutes); 
+app.use(ticketsRoutes); 
 
 module.exports = app;
