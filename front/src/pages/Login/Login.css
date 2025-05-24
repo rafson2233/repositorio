@@ -1,0 +1,94 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    min-height: 70vh;
+    padding: 30px 15px;
+}
+
+.login h2 {
+    color: var(--color-3);
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.formLogin form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 500px;
+    max-width: 700px;
+    padding: 50px 40px;
+    gap: 20px;
+    border-radius: 16px;
+    background-color: var(--color-2);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLogin button {
+    color: var(--color-2);
+    background-color: var(--color-3);
+    align-self: center;
+    font-size: 16px;
+    width: 200px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: none;
+}
+
+.formLogin button:hover {
+    background-color: var(--color-5);
+}
+
+.formLogin input {
+    background-color:var(--color-6);
+    border: 1px solid var(--color-7);
+    color: var(--color-8);
+    width: 100%;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 16px 12px 42px;
+}
+
+.right-link {
+    font-size: 14px;
+    text-align: right;
+    display: block;
+}
+
+.left-link {
+    font-size: 14px;
+    text-align: left;
+    display: block;
+}
+
+.error-message {
+    color: var(--color-9);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color:var(--color-10);
+    font-size: 18px;
+}

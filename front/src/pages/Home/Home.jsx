@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 const menuHome = [
   { label: "LOGIN |", href: "/login" },
-  { label: "CADASTRO |", href: "/register" },
-  { label: "SOBRE", href: "/about" },
+  { label: "REGISTER |", href: "/register" },
+  { label: "ABOUT", href: "/about" },
 ];
 
 const Home = () => {

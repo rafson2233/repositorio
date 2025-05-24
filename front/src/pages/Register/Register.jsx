@@ -7,7 +7,7 @@ import { FaUser, FaEnvelope, FaLock, FaKey, FaEye, FaEyeSlash } from 'react-icon
 const menuRegister = [
   { label: 'LOGIN |', href: '/login' },
   { label: 'HOME |', href: '/' },
-  { label: 'SOBRE', href: '/about' }
+  { label: 'ABOUT', href: '/about' }
 ];
 
 export const Register = () => {
