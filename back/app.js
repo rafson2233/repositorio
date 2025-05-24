@@ -4,6 +4,9 @@ const cookieParser = require('cookie-parser');
 
 const registerRoutes = require('./routes/RegisterRoutes');
 const authRoutes = require('./routes/AuthRoutes');
+const ticketRegistrationRoutes = require('./routes/TicketRegistrationRoutes')
+const tokenValidation = require('./routes/TokenValidation')
+const logoutRoutes = require('./routes/LogoutRoutes')
 
 const app = express();
 
@@ -18,5 +21,8 @@ app.use(cookieParser());
 
 app.use(registerRoutes);
 app.use(authRoutes); 
+app.use(ticketRegistrationRoutes)
+app.use(tokenValidation); 
+app.use(logoutRoutes); 
 
 module.exports = app;
