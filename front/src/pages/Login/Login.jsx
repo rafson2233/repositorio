@@ -49,7 +49,7 @@ export const Login = () => {
             </div>
 
             <div className="itens">
-              <Link to="/forgetPassword" className="right-link">Forgot password</Link>
+              <Link to="/recovery" className="right-link">Forgot password</Link>
             </div>
 
             <button type="submit">

@@ -113,4 +113,44 @@ router.delete('/deleteTicket/:id', async (req, res) => {
     }
 });
 
+
+router.put('/editPartialTicket/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        if (!mongoose.Types.ObjectId.isValid(id)) {
+            return res.status(400).json({ error: 'Invalid ticket ID.' });
+        }
+
+        const allowedFields = ['responsableName', 'weight', 'status', 'priority'];
+        const updates = {};
+
+        for (const key of allowedFields) {
+            if (req.body[key] !== undefined) {
+                updates[key] = req.body[key];
+            }
+        }
+        if (updates.responsableName) {
+            const responsibleRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
+            if (!responsibleRegex.test(updates.responsible)) {
+                return res.status(400).json({ error: 'Responsible must contain only letters and spaces.' });
+            }
+        }
+
+        const updatedTicket = await Tickets.findByIdAndUpdate(
+            id,
+            { $set: updates },
+            { new: true }
+        );
+
+        if (!updatedTicket) {
+            return res.status(404).json({ error: 'Ticket not found' });
+        }
+
+        res.status(200).json({ message: 'Ticket updated partially!', ticket: updatedTicket });
+    } catch (err) {
+        console.error('Error updating ticket partially:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
 module.exports = router;
