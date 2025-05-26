@@ -47,7 +47,7 @@ const SideBar = () => {
 
       <div className="sidebar-footer">
         <div>
-          <Link to="/Profile">
+          <Link to="/profile">
           <button className="logout-button">Profile</button>
         </Link>
         </div> 
