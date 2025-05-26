@@ -10,6 +10,7 @@ const logoutRoutes = require('./routes/LogoutRoutes')
 const recoveryRouts = require('./routes/RecoveryRoutes')
 const displayTicketsRoutes = require('./routes/DisplayAllTicketsRoutes')
 const ticketsRoutes = require('./routes/TicketsRoutes')
+const profileRoutes = require('./routes/ProfileRoutes')
 
 const app = express();
 
@@ -30,5 +31,6 @@ app.use(logoutRoutes);
 app.use(recoveryRouts);
 app.use(displayTicketsRoutes); 
 app.use(ticketsRoutes); 
+app.use(profileRoutes); 
 
 module.exports = app;

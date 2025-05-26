@@ -30,10 +30,6 @@ export const Profile = () => {
                 <p><strong>Código de Acesso:</strong> {accessCode}</p>
               </div>
             </div>
-              <Link to="/config" className="icon-item">
-                <FaUserCog />
-              <span>Configurações</span>
-                </Link>
           </>
         )}
       </main>

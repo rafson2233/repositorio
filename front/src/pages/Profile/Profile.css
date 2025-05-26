@@ -46,34 +46,6 @@
   margin-top: 30px;
 }
 
-.icon-item {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 16px 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-  border: none;
-  width: 250px;
-}
-
-.icon-item:hover {
-  background-color: #0077ff;
-  color: #fff;
-  transform: translateY(-4px);
-}
-
-.icon-item svg {
-  font-size: 24px;
-}
-
-.icon-item span {
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .error-message {
   color: red;
   font-weight: bold;
