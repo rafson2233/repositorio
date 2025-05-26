@@ -1,0 +1,28 @@
+.header { 
+    height: 10vh;
+    width: 100vw;
+    padding: 0 20px 0 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.logo img{
+    height: 40px;
+}
+.menu{
+    display: flex;
+    
+}
+.menu ul{
+    display: flex;
+    gap: 10px;
+
+}

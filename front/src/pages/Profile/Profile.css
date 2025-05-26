@@ -1,0 +1,52 @@
+.profile {
+  margin-left: 260px;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077ff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.data {
+  display: flex;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  align-items: baseline;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.print-container h1 {
+  font-size: 28px;
+  color: #0077ff;
+  margin-bottom: 10px;
+}
+
+.print-container h2 {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.print-container p {
+  font-size: 16px;
+  color: #444;
+}
+
+.icons-section {
+  margin-top: 30px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}

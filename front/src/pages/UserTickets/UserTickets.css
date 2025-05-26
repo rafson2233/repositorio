@@ -1,0 +1,128 @@
+.tickets-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.tickets-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 15px;
+}
+
+.filters-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+  padding: 10px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filters select,
+.filters input[type="text"] {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--color-11);
+  background-color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 13px;
+  min-width: 200px;
+  max-width: 300px;
+  flex-grow: 1;
+}
+
+.filters-wrapper .filters:first-child {
+  flex: 2;
+}
+
+.filters-wrapper .filters:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filters select:focus,
+.filters input[type="text"]:focus {
+  border-color: var(--color-3);
+  box-shadow: 0 0 6px var(--color-5);
+  outline: none;
+}
+
+.table-container {
+  width: 100%;
+  background-color: var(--color-2);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.table-container th {
+  padding: 14px 12px;
+  font-weight: 600;
+  text-align: left;
+  background-color: var(--color-3);
+  color: var(--color-2);
+  cursor: pointer;
+}
+
+.table-container th:hover {
+  background-color: var(--color-5);
+}
+
+.table-container td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-2);
+}
+
+.no-tickets {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: var(--color-10);
+}
+
+.pagination-buttons button,
+.btn-open-modal {
+  background-color: var(--color-3);
+  color: var(--color-2);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-open-modal:hover {
+  background-color: var(--color-5);
+}
+
+.pagination-controls,
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
