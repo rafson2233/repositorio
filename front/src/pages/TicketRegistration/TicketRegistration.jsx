@@ -14,8 +14,7 @@ import {
   FaBug
 } from 'react-icons/fa';
 
-const menuTicketRegistration = [
-];
+const menuTicketRegistration = [];
 
 export const TicketRegistration = () => {
   const response = useTicketRegisterController();

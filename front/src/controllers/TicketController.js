@@ -45,3 +45,25 @@ export const handleDelete = async (id, onClose) => {
     return false;
   }
 };
+
+export const handlePartialEdit = async (id, onClose, ticketData) => {
+  try {
+    const response = await fetch(`${BASE_URL}/editPartialTicket/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(ticketData),
+    });
+    if (response.ok) {
+      return { success: true };
+    } else {
+      const data = await response.json();
+      return { success: false, error: data.error || 'Unknown error occurred.' };
+    }
+  } catch (err) {
+    console.error('Failed to edit ticket:', err);
+    return { success: false, error: 'An error occurred while trying to edit the ticket.' };
+  }
+};
+

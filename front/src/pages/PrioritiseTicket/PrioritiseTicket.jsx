@@ -1,17 +1,17 @@
 import Header from '../../components/header/PageHeader';
 import Sidebar from '../../components/sideBar/SideBar';
 import TableHeader from '../../components/header/TableHeader';
-import { AllTicketsController } from '../../controllers/AllTicketsController';
-import TicketModal from '../../components/modals/AllTicketsModal';
-import './AllTickets.css';
+import { PrioritiseTicketsController } from '../../controllers/PrioritiseTicketController';
+import PrioritiseTicketModal from '../../components/modals/PrioritiseTicketsModal';
+import './prioritiseTicket.css';
 
 const menuTickets = [];
 const headers = [
-  'Company', 'Budget', 'Date', 'Level', 'Error', 'User', 'Responsible', 'Link', 'Options'
+  'Company', 'Budget', 'Date', 'Level', 'Error', 'User', 'Responsible', 'Weight', 'Priority ', 'Status', 'Link', 'Options'
 ];
 
 const AllTickets = () => {
-  const response = AllTicketsController();
+  const response = PrioritiseTicketsController();
 
   return (
     <>
@@ -91,6 +91,9 @@ const AllTickets = () => {
                         <td>{ticket.errorFound}</td>
                         <td>{ticket.userName}</td>
                         <td>{ticket.responsableName || 'Not assigned'}</td>
+                        <td>{ticket.weight || '-'}</td>
+                        <td>{ticket.priority || '-'}</td>
+                        <td>{ticket.status}</td>
                         <td>
                           <a href={ticket.linkTicket} target='_blank' rel='noopener noreferrer'>
                             Link
@@ -108,6 +111,9 @@ const AllTickets = () => {
               </table>
             </div>
 
+
+         
+
             <div className="pagination-buttons">
               <button onClick={() => response.goToPage(response.currentPage - 1)} disabled={response.currentPage === 1}>
                 Previous
@@ -119,7 +125,7 @@ const AllTickets = () => {
             </div>
           </div>
 
-          <TicketModal ticket={response.selectedTicket} onClose={response.handleCloseModal} />
+          <PrioritiseTicketModal ticket={response.selectedTicket} onClose={response.handleCloseModal} onDelete={response.handleDelete} />
         </main>
       </div>
     </>

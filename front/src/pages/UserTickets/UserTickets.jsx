@@ -1,11 +1,11 @@
 import Header from '../../components/header/PageHeader';
-import Sidebar from '../../components/sidebar/SideBar';
+import Sidebar from '../../components/sideBar/SideBar';
 import TableHeader from '../../components/header/TableHeader';
 import { UserTicketsController } from '../../controllers/UserTicketsController';
 import TicketModal from '../../components/modals/UserTicketsModal';
 import './UserTickets.css';
 
-const menuTickets = [{ label: 'ACCOUNT', href: '' }];
+const menuTickets = [];
 const headers = [
   'Company', 'Budget', 'Date', 'Level', 'Error', 'Link', 'Options'
 ];

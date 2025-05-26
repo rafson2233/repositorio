@@ -39,7 +39,7 @@ const SideBar = () => {
         <Link to="/allTickets">
           <button>All tickets</button>
         </Link>
-        <Link to="/#">
+        <Link to="/prioritiseTickets">
           <button>Sort tickets</button>
         </Link>
         

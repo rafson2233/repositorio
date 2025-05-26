@@ -12,6 +12,7 @@ import ResetPassword from "./pages/ChangePassword/ResetPassword";
 import AccessDenied from "./pages/AccessDenied/AccessDenied";
 import UserTickets from "./pages/UserTickets/UserTickets";
 import AllTickets from "./pages/AllTickets/AllTickets";
+import PrioritiseTickets from "./pages/PrioritiseTicket/PrioritiseTicket";
 
 function App() {
   return (
@@ -42,11 +43,20 @@ function App() {
             </ProtectedRoute>
           }
         />
-          <Route
+        <Route
           path="/allTickets"
           element={
             <ProtectedRoute>
               <AllTickets />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/prioritiseTickets"
+          element={
+            <ProtectedRoute>
+              <PrioritiseTickets />
             </ProtectedRoute>
           }
         />
